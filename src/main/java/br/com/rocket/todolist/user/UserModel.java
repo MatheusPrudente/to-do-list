@@ -26,7 +26,7 @@ public class UserModel {
 
 	@Column
 	private String password;
-	
+
 	@CreationTimestamp
 	private LocalDateTime createdAt;
 
@@ -58,9 +58,25 @@ public class UserModel {
 		this.password = password;
 	}
 
+	public UUID getId() {
+		return id;
+	}
+
+	public void setId(UUID id) {
+		this.id = id;
+	}
+
+	public LocalDateTime getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(LocalDateTime createdAt) {
+		this.createdAt = createdAt;
+	}
+
 	@Override
 	public int hashCode() {
-		return Objects.hash(name, password, username);
+		return Objects.hash(id);
 	}
 
 	@Override
@@ -72,7 +88,7 @@ public class UserModel {
 		if (getClass() != obj.getClass())
 			return false;
 		UserModel other = (UserModel) obj;
-		return Objects.equals(name, other.name) && Objects.equals(password, other.password)
-				&& Objects.equals(username, other.username);
+		return Objects.equals(id, other.id);
 	}
+
 }

@@ -23,7 +23,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias :
 
   Projeto foi desenvolvido durante o curso *__Curso Online de Java__* oferecida pela [Rockeseat](https://www.rocketseat.com.br/). O projeto consiste em uma Api Rest de Gerenciamento de Tarefas
 
-## :bookmark_tabs: Documentação da API
+## Documentação da API
 
 #### URL base
 
